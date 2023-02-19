@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  max-height: 40vh;
+  height: 100px;
+  background-color: #000;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+header a {
+  width: 20%;
+}
+
+header .logo {
+  width: 10rem;
+  padding: 10px 10px 10px 30px;
+}
+
+header .search {
+  width: 40%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+header .searchBar {
+  color: #000;
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+header .logo-busq {
+  width: 40px;
+  height: 45px;
+  padding: 10px;
+}
+
+header nav {
+  width: 45%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px;
+  font-family: Inter, sans-serif;
+  display: flex;
+}
+
+header ul {
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  display: flex;
+}
+
+header .hamburguesa {
+  width: 30px;
+}
+
+footer {
+  height: 10%;
+  width: 100%;
+  color: #fff;
+  background: #111;
+  justify-content: space-between;
+  display: flex;
+  top: 250%;
+  left: 0%;
+  right: 0%;
+}
+
+footer img {
+  height: 80px;
+  width: auto;
+  padding: 20px 5px 5px 20px;
+}
+
+/*# sourceMappingURL=index.034b6250.css.map */

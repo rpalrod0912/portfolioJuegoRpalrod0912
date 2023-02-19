@@ -1,0 +1,18 @@
+footer {
+  display: flex;
+  top: 250%;
+  left: 0%;
+  right: 0%;
+  background: #111;
+  height: 10%;
+  width: 100%;
+  color: #fff;
+  justify-content: space-between;
+  img {
+    height: 80px;
+    width: auto;
+    padding: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
