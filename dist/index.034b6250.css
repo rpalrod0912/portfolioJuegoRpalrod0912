@@ -18,7 +18,7 @@ header a {
 }
 
 header .logo {
-  width: 10rem;
+  width: 7rem;
   padding: 10px 10px 10px 30px;
 }
 
@@ -77,8 +77,12 @@ footer {
   right: 0%;
 }
 
+footer .imPrincipal {
+  height: 8rem;
+}
+
 footer img {
-  height: 80px;
+  height: 100px;
   width: auto;
   padding: 20px 5px 5px 20px;
 }

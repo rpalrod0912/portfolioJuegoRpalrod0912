@@ -8,8 +8,11 @@ footer {
   width: 100%;
   color: #fff;
   justify-content: space-between;
+  .imPrincipal {
+    height: 8rem;
+  }
   img {
-    height: 80px;
+    height: 100px;
     width: auto;
     padding: 5px;
     padding-top: 20px;
