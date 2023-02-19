@@ -1,0 +1,7 @@
+#Ignorar node modules
+node_modules
+#Ignorar parcel cache
+.parcel-cache
+
+#Ignorar package-lock.json
+package-lock.json
