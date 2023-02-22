@@ -87,4 +87,13 @@ footer img {
   padding: 20px 5px 5px 20px;
 }
 
+.secInicio {
+  width: 100%;
+  display: flex;
+}
+
+.secInicio .miVideo {
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.034b6250.css.map */
