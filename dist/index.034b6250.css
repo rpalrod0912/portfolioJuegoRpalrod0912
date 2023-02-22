@@ -87,13 +87,274 @@ footer img {
   padding: 20px 5px 5px 20px;
 }
 
+@font-face {
+  font-family: SNES Italic;
+  src: url("SNES_Italic.e7d7bc90.eot") format("eot"), url("SNES_Italic.c160ac37.woff") format("woff"), url("SNES_Italic.50723e3a.ttf") format("truetype"), url("SNES_Italic.eef23acc.svg#SNES-Italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Tarrget Condensed Italic;
+  src: url("tarrgetcondital.d42f9efe.eot") format("eot"), url("tarrgetcondital.a5efee5d.woff") format("woff"), url("tarrgetcondital.283b294f.ttf") format("truetype"), url("tarrgetcondital.e927bb4c.svg#TarrgetCondensedItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .secInicio {
   width: 100%;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
 .secInicio .miVideo {
   width: 100%;
+  opacity: .7;
+}
+
+.secInicio .logoVideo {
+  max-width: 15%;
+  z-index: 0;
+  position: absolute;
+}
+
+.secDos {
+  height: 100vh;
+  background-color: #494949;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  display: flex;
+}
+
+.secDos .titulo {
+  color: #fff;
+  letter-spacing: 3px;
+  justify-content: center;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  font-family: SNES Italic;
+  font-size: 3.2rem;
+}
+
+.secDos .secDosText {
+  width: 40%;
+  color: #fff;
+  letter-spacing: 3px;
+  justify-content: center;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  font-family: SNES Italic;
+  font-size: 2.8rem;
+}
+
+.contenedorTab {
+  width: 80%;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .3em .3em .6em var(--sombra-ppal), -.3em -.3em .6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: .5em;
+  transition: all .4s;
+}
+
+.contenedorTab :root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #fff;
+  --borde-negro: #00000050;
+  --marcado: #7fc3ff;
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  .contenedorTab :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #ffffff50;
+  }
+}
+
+.contenedorTab html, .contenedorTab body, .contenedorTab div, .contenedorTab span, .contenedorTab applet, .contenedorTab object, .contenedorTab iframe, .contenedorTab h1, .contenedorTab h2, .contenedorTab h3, .contenedorTab h4, .contenedorTab h5, .contenedorTab h6, .contenedorTab p, .contenedorTab blockquote, .contenedorTab pre, .contenedorTab a, .contenedorTab abbr, .contenedorTab acronym, .contenedorTab address, .contenedorTab big, .contenedorTab cite, .contenedorTab code, .contenedorTab del, .contenedorTab dfn, .contenedorTab em, .contenedorTab img, .contenedorTab ins, .contenedorTab kbd, .contenedorTab q, .contenedorTab s, .contenedorTab samp, .contenedorTab small, .contenedorTab strike, .contenedorTab strong, .contenedorTab sub, .contenedorTab sup, .contenedorTab tt, .contenedorTab var, .contenedorTab b, .contenedorTab u, .contenedorTab i, .contenedorTab center, .contenedorTab dl, .contenedorTab dt, .contenedorTab dd, .contenedorTab ol, .contenedorTab ul, .contenedorTab li, .contenedorTab fieldset, .contenedorTab form, .contenedorTab label, .contenedorTab legend, .contenedorTab table, .contenedorTab caption, .contenedorTab tbody, .contenedorTab tfoot, .contenedorTab thead, .contenedorTab tr, .contenedorTab th, .contenedorTab td, .contenedorTab article, .contenedorTab aside, .contenedorTab canvas, .contenedorTab details, .contenedorTab embed, .contenedorTab figure, .contenedorTab figcaption, .contenedorTab footer, .contenedorTab header, .contenedorTab hgroup, .contenedorTab menu, .contenedorTab nav, .contenedorTab output, .contenedorTab ruby, .contenedorTab section, .contenedorTab summary, .contenedorTab time, .contenedorTab mark, .contenedorTab audio, .contenedorTab video, .contenedorTab button {
+  box-sizing: border-box;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedorTab img, .contenedorTab picture, .contenedorTab video, .contenedorTab iframe, .contenedorTab figure {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.contenedorTab a {
+  display: block;
+}
+
+.contenedorTab p a {
+  display: inline;
+}
+
+.contenedorTab li {
+  list-style-type: none;
+}
+
+.contenedorTab html {
+  scroll-behavior: smooth;
+}
+
+.contenedorTab h1, .contenedorTab h2, .contenedorTab h3, .contenedorTab h4, .contenedorTab h5, .contenedorTab h6, .contenedorTab p, .contenedorTab span, .contenedorTab a, .contenedorTab strong, .contenedorTab blockquote, .contenedorTab i, .contenedorTab b, .contenedorTab u, .contenedorTab em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contenedorTab blockquote:before, .contenedorTab blockquote:after, .contenedorTab q:before, .contenedorTab q:after {
+  content: "";
+  content: none;
+}
+
+.contenedorTab ::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+.contenedorTab form, .contenedorTab input, .contenedorTab textarea, .contenedorTab select, .contenedorTab button, .contenedorTab label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  color: inherit;
+  appearance: none;
+  background-color: #0000;
+  display: block;
+}
+
+.contenedorTab table, .contenedorTab tr, .contenedorTab td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.contenedorTab svg {
+  width: 100%;
+  fill: currentColor;
+  display: block;
+}
+
+.contenedorTab body {
+  font-family: var(--tipo-principal);
+  min-height: 100vh;
+  background-color: var(--blanco);
+  color: var(--negro);
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  line-height: 1.4em;
+  display: flex;
+}
+
+.contenedorTab .contenedor {
+  max-width: 120em;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .3em .3em .6em var(--sombra-ppal), -.3em -.3em .6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: .5em;
+  padding: 1em;
+  transition: all .4s;
+}
+
+.contenedorTab .contenedor .ul {
+  width: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contenedorTab .contenedor .li {
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .3em .3em .6em var(--sombra-ppal), -.3em -.3em .6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
+  border-radius: .5em;
+  margin: 0 2em 0 0;
+  padding: 1em;
+  font-family: SNES Italic;
+  font-size: 1.4rem;
+  transition: all .5s;
+}
+
+.contenedorTab .contenedor .li.activo {
+  color: #000;
+  background-color: #fff;
+  font-family: SNES Italic;
+  font-size: 2rem;
+}
+
+.contenedorTab .contenedor .subcontenedor {
+  min-height: 10vh;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.contenedorTab .contenedor .bloque {
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .3em .3em .6em var(--sombra-ppal), -.3em -.3em .6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  opacity: 0;
+  border-radius: .5em;
+  margin: 1em;
+  padding: 1em;
+  font-family: SNES Italic;
+  transition: all .5s;
+  position: absolute;
+  top: 2em;
+  transform: translateY(50%);
+}
+
+.contenedorTab .contenedor .bloque .descriptionPersonaje {
+  flex-direction: column;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.contenedorTab .contenedor .bloque .descriptionPersonaje h2 {
+  padding-bottom: 2.2rem;
+  font-size: 3rem;
+}
+
+.contenedorTab .contenedor .bloque .descriptionPersonaje p {
+  width: 24rem;
+  letter-spacing: .1rem;
+  font-size: 2rem;
+}
+
+.contenedorTab .contenedor .bloque .imagenPersonaje {
+  width: 30vh;
+}
+
+.contenedorTab .contenedor .bloque.activo {
+  opacity: .6;
+  background-color: #d3d3d3;
+  flex-flow: wrap;
+  display: flex;
+  transform: translateY(0%);
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

@@ -1,15 +1,159 @@
+@font-face {
+  font-family: "SNES Italic";
+  src: url("/src/assets/fonts/SNES_Italic.eot?") format("eot"),
+    url("/src/assets/fonts/SNES_Italic.woff") format("woff"),
+    url("/src/assets/fonts/SNES_Italic.ttf") format("truetype"),
+    url("/src/assets/fonts/SNES_Italic.svg#SNES-Italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tarrget Condensed Italic";
+  src: url("/src/assets/fonts/tarrgetcondital.eot") format("eot"),
+    url("/src/assets/fonts/tarrgetcondital.woff") format("woff"),
+    url("/src/assets/fonts/tarrgetcondital.ttf") format("truetype"),
+    url("/src/assets/fonts/tarrgetcondital.svg#TarrgetCondensedItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .secInicio {
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   /*overflow: hidden;
   position: relative;
   height: 60vh;
   */
   .miVideo {
     width: 100%;
+    opacity: 0.7;
     //height: 50vh;
     /*position: absolute;
     top: -248px;
     */
+  }
+  .logoVideo {
+    max-width: 15%;
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+.secDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  height: 100vh;
+  background-color: #494949;
+  .titulo {
+    color: white;
+    font-size: 3.2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-family: SNES Italic;
+  }
+  .secDosText {
+    width: 40%;
+    color: white;
+    font-size: 2.8rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-family: SNES Italic;
+  }
+}
+.contenedorTab {
+  @import "/src/assets/sass/imports/_variables",
+    "/src/assets/sass/imports/_mixins", "/src/assets/sass/imports/_reset",
+    "/src/assets/sass/imports/_keyframes";
+  width: 80%;
+  //max-width: 120em;
+  // background-color: lightgray;
+  //padding: 1em;
+  @include neo(1, 0.5em, 0.3em);
+  .contenedor {
+    //width: 90%;
+    max-width: 120em;
+    // background-color: lightgray;
+    padding: 1em;
+    @include neo(1, 0.5em, 0.3em);
+  }
+  .contenedor .ul {
+    width: 100%;
+    // background-color: lightblue;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor .li {
+    // background-color: lightgreen;
+    padding: 1em;
+    margin: 0 2em 0 0;
+    @include neo(1, 0.5em, 0.3em);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-family: SNES Italic;
+    font-size: 1.4rem;
+  }
+  .contenedor .li.activo {
+    background-color: white;
+    color: black;
+    font-family: SNES Italic;
+    font-size: 2rem;
+  }
+  .contenedor .subcontenedor {
+    min-height: 10vh;
+    // background-color: lightsalmon;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor .bloque {
+    // background-color: lightseagreen;
+    margin: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 2em;
+    font-family: SNES Italic;
+    .descriptionPersonaje {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      h2 {
+        font-size: 3rem;
+        padding-bottom: 2.2rem;
+      }
+      p {
+        font-size: 2rem;
+        width: 24rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+
+    .imagenPersonaje {
+      width: 30vh;
+    }
+    @include neo(1, 0.5em, 0.3em);
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease;
+  }
+  .contenedor .bloque.activo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    opacity: 0.6;
+    transform: translateY(0%);
   }
 }
