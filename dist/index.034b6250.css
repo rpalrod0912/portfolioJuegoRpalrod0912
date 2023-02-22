@@ -331,6 +331,7 @@ footer img {
 .contenedorTab .contenedor .bloque .descriptionPersonaje {
   flex-direction: column;
   margin-top: 3rem;
+  padding-right: 2.5rem;
   display: flex;
 }
 
@@ -350,11 +351,15 @@ footer img {
 }
 
 .contenedorTab .contenedor .bloque.activo {
-  opacity: .6;
+  opacity: .7;
   background-color: #d3d3d3;
   flex-flow: wrap;
   display: flex;
   transform: translateY(0%);
+}
+
+.contenedorTab .contenedor .bloque.activo .descriptionPersonaje, .contenedorTab .contenedor .bloque.activo .descriptionPersonaje img, .contenedorTab .contenedor .bloque.activo .imagenPersonaje {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
