@@ -80,99 +80,33 @@
   }
 }
 .contenedorTab {
-  @import "/src/assets/sass/imports/_variables",
-    "/src/assets/sass/imports/_mixins", "/src/assets/sass/imports/_reset",
-    "/src/assets/sass/imports/_keyframes";
+  @import "../utils/tabs";
   width: 80%;
-  //max-width: 120em;
-  // background-color: lightgray;
-  //padding: 1em;
-  @include neo(1, 0.5em, 0.3em);
-  .contenedor {
-    //width: 90%;
-    //max-width: 120em;
-    // background-color: lightgray;
-    padding: 1em;
-    @include neo(1, 0.5em, 0.3em);
-  }
-  .contenedor .ul {
+}
+
+.secTres {
+  .tituloSecTres {
+    display: flex;
+    background-color: black;
     width: 100%;
-    // background-color: lightblue;
-
-    display: flex;
-    flex-flow: row nowrap;
+    height: auto;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-  }
-  .contenedor .li {
-    // background-color: lightgreen;
-    padding: 1em;
-    margin: 0 2em 0 0;
-    @include neo(1, 0.5em, 0.3em);
-    transition: all 0.5s ease;
-    cursor: pointer;
-    font-family: SNES Italic;
-    font-size: 1.4rem;
-  }
-  .contenedor .li.activo {
-    background-color: white;
-    color: black;
-    font-family: SNES Italic;
-    font-size: 2rem;
-  }
-  .contenedor .subcontenedor {
-    min-height: 10vh;
-    // background-color: lightsalmon;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-  .contenedor .bloque {
-    // background-color: lightseagreen;
-    margin: 1em;
-    padding: 1em;
-    position: absolute;
-    top: 2em;
-    font-family: SNES Italic;
-    .descriptionPersonaje {
-      display: flex;
-      flex-direction: column;
-      margin-top: 3rem;
-      padding-right: 2.5rem;
-      h2 {
-        font-size: 3rem;
-        padding-bottom: 2.2rem;
-      }
-      p {
-        font-size: 2rem;
-        width: 24rem;
-        letter-spacing: 0.1rem;
-      }
+    .h1-secTres {
+      //white-space: pre;
+      color: white;
+      margin: auto;
+      width: 80%;
+      font-family: SNES Italic;
+      letter-spacing: 0.18em;
+      font-size: 35px;
+      padding-top: 2%;
+      padding-bottom: 3%;
     }
-
-    .imagenPersonaje {
-      width: 30vh;
-    }
-    @include neo(1, 1.5em, 0.3em);
-    opacity: 0;
-    transform: translateY(50%);
-    transition: all 0.5s ease;
   }
-  .contenedor .bloque.activo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: lightgray;
-    opacity: 0.7;
-    .descriptionPersonaje {
-      opacity: 1;
-      img {
-        opacity: 1;
-      }
-    }
-    .imagenPersonaje {
-      opacity: 1;
-    }
-    transform: translateY(0%);
-  }
+}
+.contenedorCarrousel {
+  @import "../utils/carrousel";
+  display: flex;
+  justify-content: center;
 }

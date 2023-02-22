@@ -160,10 +160,10 @@ footer img {
 }
 
 .contenedorTab {
-  width: 80%;
   color: var(--negro);
   background-color: var(--blanco);
   box-shadow: .3em .3em .6em var(--sombra-ppal), -.3em -.3em .6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  width: 80%;
   border-radius: .5em;
   transition: all .4s;
 }
@@ -369,6 +369,205 @@ footer img {
 
 .contenedorTab .contenedor .bloque.activo .descriptionPersonaje, .contenedorTab .contenedor .bloque.activo .descriptionPersonaje img, .contenedorTab .contenedor .bloque.activo .imagenPersonaje {
   opacity: 1;
+}
+
+.secTres .tituloSecTres {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #000;
+  justify-content: center;
+  display: flex;
+}
+
+.secTres .tituloSecTres .h1-secTres {
+  color: #fff;
+  width: 80%;
+  letter-spacing: .18em;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-family: SNES Italic;
+  font-size: 35px;
+}
+
+.contenedorCarrousel {
+  justify-content: center;
+  display: flex;
+}
+
+.contenedorCarrousel :root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #fff;
+  --borde-negro: #00000050;
+  --marcado: #7fc3ff;
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  .contenedorCarrousel :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #ffffff50;
+  }
+}
+
+.contenedorCarrousel html, .contenedorCarrousel body, .contenedorCarrousel div, .contenedorCarrousel span, .contenedorCarrousel applet, .contenedorCarrousel object, .contenedorCarrousel iframe, .contenedorCarrousel h1, .contenedorCarrousel h2, .contenedorCarrousel h3, .contenedorCarrousel h4, .contenedorCarrousel h5, .contenedorCarrousel h6, .contenedorCarrousel p, .contenedorCarrousel blockquote, .contenedorCarrousel pre, .contenedorCarrousel a, .contenedorCarrousel abbr, .contenedorCarrousel acronym, .contenedorCarrousel address, .contenedorCarrousel big, .contenedorCarrousel cite, .contenedorCarrousel code, .contenedorCarrousel del, .contenedorCarrousel dfn, .contenedorCarrousel em, .contenedorCarrousel img, .contenedorCarrousel ins, .contenedorCarrousel kbd, .contenedorCarrousel q, .contenedorCarrousel s, .contenedorCarrousel samp, .contenedorCarrousel small, .contenedorCarrousel strike, .contenedorCarrousel strong, .contenedorCarrousel sub, .contenedorCarrousel sup, .contenedorCarrousel tt, .contenedorCarrousel var, .contenedorCarrousel b, .contenedorCarrousel u, .contenedorCarrousel i, .contenedorCarrousel center, .contenedorCarrousel dl, .contenedorCarrousel dt, .contenedorCarrousel dd, .contenedorCarrousel ol, .contenedorCarrousel ul, .contenedorCarrousel li, .contenedorCarrousel fieldset, .contenedorCarrousel form, .contenedorCarrousel label, .contenedorCarrousel legend, .contenedorCarrousel table, .contenedorCarrousel caption, .contenedorCarrousel tbody, .contenedorCarrousel tfoot, .contenedorCarrousel thead, .contenedorCarrousel tr, .contenedorCarrousel th, .contenedorCarrousel td, .contenedorCarrousel article, .contenedorCarrousel aside, .contenedorCarrousel canvas, .contenedorCarrousel details, .contenedorCarrousel embed, .contenedorCarrousel figure, .contenedorCarrousel figcaption, .contenedorCarrousel footer, .contenedorCarrousel header, .contenedorCarrousel hgroup, .contenedorCarrousel menu, .contenedorCarrousel nav, .contenedorCarrousel output, .contenedorCarrousel ruby, .contenedorCarrousel section, .contenedorCarrousel summary, .contenedorCarrousel time, .contenedorCarrousel mark, .contenedorCarrousel audio, .contenedorCarrousel video, .contenedorCarrousel button {
+  box-sizing: border-box;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedorCarrousel img, .contenedorCarrousel picture, .contenedorCarrousel video, .contenedorCarrousel iframe, .contenedorCarrousel figure {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.contenedorCarrousel a {
+  display: block;
+}
+
+.contenedorCarrousel p a {
+  display: inline;
+}
+
+.contenedorCarrousel li {
+  list-style-type: none;
+}
+
+.contenedorCarrousel html {
+  scroll-behavior: smooth;
+}
+
+.contenedorCarrousel h1, .contenedorCarrousel h2, .contenedorCarrousel h3, .contenedorCarrousel h4, .contenedorCarrousel h5, .contenedorCarrousel h6, .contenedorCarrousel p, .contenedorCarrousel span, .contenedorCarrousel a, .contenedorCarrousel strong, .contenedorCarrousel blockquote, .contenedorCarrousel i, .contenedorCarrousel b, .contenedorCarrousel u, .contenedorCarrousel em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contenedorCarrousel blockquote:before, .contenedorCarrousel blockquote:after, .contenedorCarrousel q:before, .contenedorCarrousel q:after {
+  content: "";
+  content: none;
+}
+
+.contenedorCarrousel ::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+.contenedorCarrousel form, .contenedorCarrousel input, .contenedorCarrousel textarea, .contenedorCarrousel select, .contenedorCarrousel button, .contenedorCarrousel label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  color: inherit;
+  appearance: none;
+  background-color: #0000;
+  display: block;
+}
+
+.contenedorCarrousel table, .contenedorCarrousel tr, .contenedorCarrousel td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.contenedorCarrousel svg {
+  width: 100%;
+  fill: currentColor;
+  display: block;
+}
+
+.contenedorCarrousel body {
+  font-family: var(--tipo-principal);
+  min-height: 100vh;
+  background-color: var(--blanco);
+  color: var(--negro);
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  line-height: 1.4em;
+  display: flex;
+}
+
+.contenedorCarrousel .carrousel {
+  width: 90%;
+  max-width: 120em;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  padding: 2em;
+  transition: all .4s;
+  overflow: hidden;
+}
+
+.contenedorCarrousel .carrousel .grande {
+  width: 200%;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: all .5s;
+  display: flex;
+  transform: translateX(0%);
+}
+
+.contenedorCarrousel .carrousel .img {
+  width: calc(50% - 2em);
+  min-height: 10vh;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  transition: all .4s;
+}
+
+.contenedorCarrousel .carrousel .puntos {
+  width: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0;
+  padding: .4em;
+  display: flex;
+}
+
+.contenedorCarrousel .carrousel .punto {
+  width: 8em;
+  height: 5em;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: .6em .6em 1.2em var(--sombra-ppal), -.6em -.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  color: #000;
+  background-color: #000;
+  border-radius: 1em;
+  margin: 1em 1em 0;
+  transition: all .4s;
+}
+
+.contenedorCarrousel .carrousel .punto.activo {
+  background-color: #add8e6;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
