@@ -120,7 +120,7 @@ footer img {
 }
 
 .secDos {
-  height: 100vh;
+  height: 120vh;
   background-color: #494949;
   flex-direction: column;
   align-items: center;
@@ -135,7 +135,7 @@ footer img {
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
   font-family: SNES Italic;
-  font-size: 3.2rem;
+  font-size: 3.8rem;
 }
 
 .secDos .secDosText {
@@ -147,6 +147,16 @@ footer img {
   margin-bottom: 1.4rem;
   font-family: SNES Italic;
   font-size: 2.8rem;
+}
+
+.secDos .secDosH2 {
+  color: #fff;
+  letter-spacing: 3px;
+  justify-content: center;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  font-family: SNES Italic;
+  font-size: 3rem;
 }
 
 .contenedorTab {
@@ -269,7 +279,6 @@ footer img {
 }
 
 .contenedorTab .contenedor {
-  max-width: 120em;
   color: var(--negro);
   background-color: var(--blanco);
   box-shadow: .3em .3em .6em var(--sombra-ppal), -.3em -.3em .6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
@@ -318,7 +327,7 @@ footer img {
   background-color: var(--blanco);
   box-shadow: .3em .3em .6em var(--sombra-ppal), -.3em -.3em .6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   opacity: 0;
-  border-radius: .5em;
+  border-radius: 1.5em;
   margin: 1em;
   padding: 1em;
   font-family: SNES Italic;
