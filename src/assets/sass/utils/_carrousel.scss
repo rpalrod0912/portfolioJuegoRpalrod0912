@@ -2,29 +2,29 @@
   "/src/assets/sass/imports/_mixins", "/src/assets/sass/imports/_reset",
   "/src/assets/sass/imports/_keyframes";
 .carrousel {
-  width: 90%;
-  max-width: 120em;
-  padding: 2em;
-  @include neo(1, 1em, 1em);
+  //max-width: 120em;
+  //padding: 2em;
+  //@include neo(1, 1em, 1em);
   overflow: hidden;
+  position: relative;
 }
 .carrousel .grande {
-  width: 200%;
+  width: 400%;
 
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  @include neo(1, 1em, 1em);
-  padding: 2em;
+  //@include neo(1, 1em, 1em);
+  //padding: 2em;
 
   transition: all 0.5s ease;
   transform: translateX(0%);
 }
 .carrousel .img {
-  width: calc(100% / 2 - 2em);
+  width: calc(25%);
   min-height: 10vh;
-  @include neo(1, 1em, 1em);
+  //@include neo(1, 1em, 1em);
 }
 .carrousel .puntos {
   width: 100%;
@@ -34,12 +34,15 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
 }
 .carrousel .punto {
-  width: 8em;
+  width: 5em;
   height: 5em;
   margin: 1em 1em 0;
-  @include neo(1, 1em, 0.6em);
+  margin-bottom: 4rem;
+  @include neo(1, 100em, 0.6em);
   background-color: black;
   color: black;
 }

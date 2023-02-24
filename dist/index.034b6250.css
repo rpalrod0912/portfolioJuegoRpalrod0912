@@ -507,40 +507,23 @@ footer img {
 }
 
 .contenedorCarrousel .carrousel {
-  width: 90%;
-  max-width: 120em;
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  border-radius: 1em;
-  padding: 2em;
-  transition: all .4s;
+  position: relative;
   overflow: hidden;
 }
 
 .contenedorCarrousel .carrousel .grande {
-  width: 200%;
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  border-radius: 1em;
+  width: 400%;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
   transition: all .5s;
   display: flex;
   transform: translateX(0%);
 }
 
 .contenedorCarrousel .carrousel .img {
-  width: calc(50% - 2em);
+  width: 25%;
   min-height: 10vh;
-  color: var(--negro);
-  background-color: var(--blanco);
-  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  border-radius: 1em;
-  transition: all .4s;
 }
 
 .contenedorCarrousel .carrousel .puntos {
@@ -551,18 +534,20 @@ footer img {
   margin: 1em 0 0;
   padding: .4em;
   display: flex;
+  position: absolute;
+  bottom: 0;
 }
 
 .contenedorCarrousel .carrousel .punto {
-  width: 8em;
+  width: 5em;
   height: 5em;
   color: var(--negro);
   background-color: var(--blanco);
   box-shadow: .6em .6em 1.2em var(--sombra-ppal), -.6em -.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   color: #000;
   background-color: #000;
-  border-radius: 1em;
-  margin: 1em 1em 0;
+  border-radius: 100em;
+  margin: 1em 1em 4rem;
   transition: all .4s;
 }
 
