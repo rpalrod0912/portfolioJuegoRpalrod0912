@@ -47,22 +47,72 @@ header .logo-busq {
 header nav {
   width: 45%;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: flex-end;
   padding: 10px;
   font-family: Inter, sans-serif;
   display: flex;
 }
 
-header ul {
-  width: 100%;
-  flex-direction: row;
-  justify-content: flex-end;
-  display: flex;
+header .botonMenu {
+  width: 40px;
+  height: 36px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
+  position: relative;
 }
 
-header .hamburguesa {
-  width: 30px;
+header .botonMenu .imgMenu {
+  width: 40px;
+  display: block;
+}
+
+header label {
+  cursor: pointer;
+}
+
+header #menu-toggle {
+  display: none;
+}
+
+header #trickMenu {
+  text-align: center;
+  z-index: 1;
+  width: 300px;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 10px 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+header #trickMenu li a {
+  text-align: center;
+  width: auto;
+  color: #000;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: block;
+}
+
+header #trickMenu li a:hover {
+  width: auto;
+  color: #fff;
+  background-color: #000;
+  transition: all .7s;
+}
+
+header #menu-toggle:checked + #trickMenu {
+  text-align: center;
+  display: block;
 }
 
 footer {
