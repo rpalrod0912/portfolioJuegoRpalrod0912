@@ -76,8 +76,19 @@
   transform: translateY(50%);
   transition: all 0.5s ease;
 }
-
-@media (max-width: 1277px) {
+@media (max-width: 730px) {
+  .contenedor .bloque {
+    .descriptionPersonaje {
+      h2 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
+@media (min-width: 730px) and (max-width: 1277px) {
   .contenedor .bloque {
     .descriptionPersonaje {
       width: 80%;
@@ -90,6 +101,7 @@
     }
   }
 }
+
 .contenedor .bloque.activo {
   height: auto;
   display: flex;

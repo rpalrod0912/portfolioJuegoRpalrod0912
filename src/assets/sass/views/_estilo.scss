@@ -84,7 +84,7 @@
   width: 80%;
 }
 
-@media (max-width: 1277px) {
+@media (min-width: 900px) and (max-width: 1277px) {
   .secDos {
     height: 147em;
     .titulo {
@@ -97,6 +97,18 @@
   }
 }
 
+@media (max-width: 900px) {
+  .secDos {
+    height: 163em;
+    .titulo {
+      font-size: 3.8rem;
+    }
+    .secDosText {
+      width: 80%;
+      font-size: 3rem;
+    }
+  }
+}
 .secTres {
   .tituloSecTres {
     display: flex;

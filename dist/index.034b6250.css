@@ -432,7 +432,17 @@ footer img {
   width: 30vh;
 }
 
-@media (max-width: 1277px) {
+@media (max-width: 730px) {
+  .contenedorTab .contenedor .bloque .descriptionPersonaje h2 {
+    font-size: 3.2rem;
+  }
+
+  .contenedorTab .contenedor .bloque .descriptionPersonaje p {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 730px) and (max-width: 1277px) {
   .contenedorTab .contenedor .bloque .descriptionPersonaje {
     width: 80%;
   }
@@ -465,7 +475,9 @@ footer img {
     align-items: center;
     display: flex;
   }
+}
 
+@media (min-width: 900px) and (max-width: 1277px) {
   .secDos {
     height: 147em;
   }
@@ -477,6 +489,21 @@ footer img {
   .secDos .secDosText {
     width: 80%;
     font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .secDos {
+    height: 163em;
+  }
+
+  .secDos .titulo {
+    font-size: 3.8rem;
+  }
+
+  .secDos .secDosText {
+    width: 80%;
+    font-size: 3rem;
   }
 }
 
