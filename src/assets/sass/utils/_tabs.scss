@@ -46,6 +46,7 @@
 }
 .contenedor .bloque {
   // background-color: lightseagreen;
+  height: 1rem;
   margin: 1em;
   padding: 1em;
   position: absolute;
@@ -75,7 +76,22 @@
   transform: translateY(50%);
   transition: all 0.5s ease;
 }
+
+@media (max-width: 1277px) {
+  .contenedor .bloque {
+    .descriptionPersonaje {
+      width: 80%;
+      h2 {
+        font-size: 3.8rem;
+      }
+      p {
+        font-size: 3.2rem;
+      }
+    }
+  }
+}
 .contenedor .bloque.activo {
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -91,4 +107,12 @@
     opacity: 1;
   }
   transform: translateY(0%);
+}
+
+@media (max-width: 1277px) {
+  .contenedor .bloque.bloque.activo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

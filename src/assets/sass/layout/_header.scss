@@ -129,3 +129,27 @@ header {
     display: block;
   }
 }
+
+@media (max-width: 620px) {
+  header {
+    .logo {
+      width: 120px;
+    }
+    .search {
+      visibility: hidden;
+    }
+    #trickMenu {
+      display: none;
+
+      text-align: center;
+
+      padding: 10px 0;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      top: 100px;
+      width: 130px;
+      list-style: none;
+    }
+  }
+}

@@ -115,6 +115,28 @@ header #menu-toggle:checked + #trickMenu {
   display: block;
 }
 
+@media (max-width: 620px) {
+  header .logo {
+    width: 120px;
+  }
+
+  header .search {
+    visibility: hidden;
+  }
+
+  header #trickMenu {
+    text-align: center;
+    z-index: 1;
+    width: 130px;
+    padding: 10px 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+}
+
 footer {
   height: 10%;
   width: 100%;
@@ -170,7 +192,7 @@ footer img {
 }
 
 .secDos {
-  height: 120vh;
+  height: 83em;
   background-color: #494949;
   flex-direction: column;
   align-items: center;
@@ -373,6 +395,7 @@ footer img {
 }
 
 .contenedorTab .contenedor .bloque {
+  height: 1rem;
   color: var(--negro);
   background-color: var(--blanco);
   box-shadow: .3em .3em .6em var(--sombra-ppal), -.3em -.3em .6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
@@ -409,7 +432,22 @@ footer img {
   width: 30vh;
 }
 
+@media (max-width: 1277px) {
+  .contenedorTab .contenedor .bloque .descriptionPersonaje {
+    width: 80%;
+  }
+
+  .contenedorTab .contenedor .bloque .descriptionPersonaje h2 {
+    font-size: 3.8rem;
+  }
+
+  .contenedorTab .contenedor .bloque .descriptionPersonaje p {
+    font-size: 3.2rem;
+  }
+}
+
 .contenedorTab .contenedor .bloque.activo {
+  height: auto;
   opacity: .7;
   background-color: #d3d3d3;
   flex-flow: wrap;
@@ -419,6 +457,27 @@ footer img {
 
 .contenedorTab .contenedor .bloque.activo .descriptionPersonaje, .contenedorTab .contenedor .bloque.activo .descriptionPersonaje img, .contenedorTab .contenedor .bloque.activo .imagenPersonaje {
   opacity: 1;
+}
+
+@media (max-width: 1277px) {
+  .contenedorTab .contenedor .bloque.bloque.activo {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .secDos {
+    height: 147em;
+  }
+
+  .secDos .titulo {
+    font-size: 4.2rem;
+  }
+
+  .secDos .secDosText {
+    width: 80%;
+    font-size: 3.8rem;
+  }
 }
 
 .secTres .tituloSecTres {
