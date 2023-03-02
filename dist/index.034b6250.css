@@ -159,6 +159,23 @@ footer img {
   padding: 20px 5px 5px 20px;
 }
 
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  footer .imPrincipal {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  footer img {
+    height: 3rem;
+  }
+}
+
 @font-face {
   font-family: SNES Italic;
   src: url("SNES_Italic.e7d7bc90.eot") format("eot"), url("SNES_Italic.c160ac37.woff") format("woff"), url("SNES_Italic.50723e3a.ttf") format("truetype"), url("SNES_Italic.eef23acc.svg#SNES-Italic") format("svg");
@@ -433,12 +450,28 @@ footer img {
 }
 
 @media (max-width: 730px) {
+  .contenedorTab .contenedor .ul {
+    flex-direction: column;
+  }
+
+  .contenedorTab .contenedor .li {
+    margin: 0;
+  }
+
+  .contenedorTab .contenedor .bloque {
+    width: 0%;
+  }
+
   .contenedorTab .contenedor .bloque .descriptionPersonaje h2 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 
   .contenedorTab .contenedor .bloque .descriptionPersonaje p {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
+  }
+
+  .contenedorTab .contenedor .bloque .contenedor .bloque.activo {
+    width: 100%;
   }
 }
 
@@ -448,10 +481,12 @@ footer img {
   }
 
   .contenedorTab .contenedor .bloque .descriptionPersonaje h2 {
+    width: 0;
     font-size: 3.8rem;
   }
 
   .contenedorTab .contenedor .bloque .descriptionPersonaje p {
+    width: 0;
     font-size: 3.2rem;
   }
 }
@@ -469,11 +504,27 @@ footer img {
   opacity: 1;
 }
 
-@media (max-width: 1277px) {
+@media (min-width: 730px) and (max-width: 1277px) {
   .contenedorTab .contenedor .bloque.bloque.activo {
     flex-direction: column;
     align-items: center;
     display: flex;
+  }
+}
+
+@media (max-width: 730px) {
+  .contenedorTab .contenedor .bloque.bloque.activo {
+    width: 100%;
+  }
+
+  .contenedorTab .contenedor .bloque.bloque.activo h2 {
+    width: 100%;
+    font-size: 2.4rem;
+  }
+
+  .contenedorTab .contenedor .bloque.bloque.activo p {
+    width: 100%;
+    font-size: 1.8rem;
   }
 }
 
@@ -498,12 +549,21 @@ footer img {
   }
 
   .secDos .titulo {
-    font-size: 3.8rem;
+    text-align: center;
+    width: 80%;
+    font-size: 3.1rem;
   }
 
   .secDos .secDosText {
+    width: 90%;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
+  .secDos .secDosH2 {
     width: 80%;
-    font-size: 3rem;
+    text-align: center;
+    font-size: 2.7rem;
   }
 }
 

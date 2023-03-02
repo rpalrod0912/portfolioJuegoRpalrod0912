@@ -77,14 +77,25 @@
   transition: all 0.5s ease;
 }
 @media (max-width: 730px) {
+  .contenedor .ul {
+    flex-direction: column;
+  }
+  .contenedor .li {
+    margin: 0em;
+  }
   .contenedor .bloque {
+    width: 0%;
+
     .descriptionPersonaje {
       h2 {
-        font-size: 3.2rem;
-      }
-      p {
         font-size: 2.8rem;
       }
+      p {
+        font-size: 2.1rem;
+      }
+    }
+    .contenedor .bloque.activo {
+      width: 100%;
     }
   }
 }
@@ -93,9 +104,11 @@
     .descriptionPersonaje {
       width: 80%;
       h2 {
+        width: 0rem;
         font-size: 3.8rem;
       }
       p {
+        width: 0rem;
         font-size: 3.2rem;
       }
     }
@@ -121,10 +134,24 @@
   transform: translateY(0%);
 }
 
-@media (max-width: 1277px) {
+@media (min-width: 730px) and (max-width: 1277px) {
   .contenedor .bloque.bloque.activo {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 730px) {
+  .contenedor .bloque.bloque.activo {
+    width: 100%;
+    h2 {
+      width: 100%;
+      font-size: 2.4rem;
+    }
+    p {
+      width: 100%;
+      font-size: 1.8rem;
+    }
   }
 }
