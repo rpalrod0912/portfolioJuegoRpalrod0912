@@ -463,10 +463,12 @@ footer img {
   }
 
   .contenedorTab .contenedor .bloque .descriptionPersonaje h2 {
+    width: 0;
     font-size: 2.8rem;
   }
 
   .contenedorTab .contenedor .bloque .descriptionPersonaje p {
+    width: 0;
     font-size: 2.1rem;
   }
 
@@ -506,9 +508,20 @@ footer img {
 
 @media (min-width: 730px) and (max-width: 1277px) {
   .contenedorTab .contenedor .bloque.bloque.activo {
+    width: 80%;
     flex-direction: column;
     align-items: center;
     display: flex;
+  }
+
+  .contenedorTab .contenedor .bloque.bloque.activo h2 {
+    width: 100%;
+    font-size: 3.4rem;
+  }
+
+  .contenedorTab .contenedor .bloque.bloque.activo p {
+    width: 100%;
+    font-size: 2.8rem;
   }
 }
 

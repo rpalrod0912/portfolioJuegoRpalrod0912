@@ -88,9 +88,11 @@
 
     .descriptionPersonaje {
       h2 {
+        width: 0rem;
         font-size: 2.8rem;
       }
       p {
+        width: 0rem;
         font-size: 2.1rem;
       }
     }
@@ -136,9 +138,18 @@
 
 @media (min-width: 730px) and (max-width: 1277px) {
   .contenedor .bloque.bloque.activo {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    h2 {
+      width: 100%;
+      font-size: 3.4rem;
+    }
+    p {
+      width: 100%;
+      font-size: 2.8rem;
+    }
   }
 }
 
