@@ -2,7 +2,6 @@
   "name": "portfoliojuego",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "clean": "rimraf dist .cache .cache-loader",
     "start": "npm-run-all clean parcel:dev",
