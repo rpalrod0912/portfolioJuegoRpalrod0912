@@ -35,6 +35,21 @@ header {
     border-radius: 15px;
     background-color: white;
   }
+  .botonesAudio {
+    display: flex;
+    padding-right: 10rem;
+    img {
+      width: 2.8rem;
+    }
+    .botonTransparente {
+      border: none;
+      cursor: pointer;
+      appearance: none;
+      background-color: inherit;
+      padding-left: 2rem;
+    }
+  }
+
   .logo-busq {
     width: 40px;
     height: 45px;
@@ -133,8 +148,36 @@ header {
   }
 }
 
+@media (min-width: 621px) and (max-width: 745px) {
+  header {
+    .botonMenu {
+      padding-right: 25px;
+      padding-bottom: 7px;
+    }
+    .botonesAudio {
+      img {
+        width: 2rem;
+      }
+    }
+  }
+
+  .search {
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 620px) {
   header {
+    .botonMenu {
+      padding-right: 30px;
+      padding-bottom: 7px;
+    }
+    .botonesAudio {
+      padding-right: 1rem;
+      img {
+        width: 2rem;
+      }
+    }
     .logo {
       width: 120px;
     }

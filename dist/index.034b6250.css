@@ -41,6 +41,23 @@ header .searchBar {
   border-radius: 15px;
 }
 
+header .botonesAudio {
+  padding-right: 10rem;
+  display: flex;
+}
+
+header .botonesAudio img {
+  width: 2.8rem;
+}
+
+header .botonesAudio .botonTransparente {
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  border: none;
+  padding-left: 2rem;
+}
+
 header .logo-busq {
   width: 40px;
   height: 45px;
@@ -118,7 +135,35 @@ header #menu-toggle:checked + #trickMenu {
   display: block;
 }
 
+@media (min-width: 621px) and (max-width: 745px) {
+  header .botonMenu {
+    padding-bottom: 7px;
+    padding-right: 25px;
+  }
+
+  header .botonesAudio img {
+    width: 2rem;
+  }
+
+  .search {
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 620px) {
+  header .botonMenu {
+    padding-bottom: 7px;
+    padding-right: 30px;
+  }
+
+  header .botonesAudio {
+    padding-right: 1rem;
+  }
+
+  header .botonesAudio img {
+    width: 2rem;
+  }
+
   header .logo {
     width: 120px;
   }
@@ -829,6 +874,16 @@ footer img {
   .contenedorCarrousel .carrousel .puntos {
     bottom: -54px;
   }
+}
+
+.miAudio {
+  cursor: pointer;
+  color: #fff;
+  z-index: 1;
+  background: #000;
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

@@ -18,7 +18,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .secInicio {
   display: flex;
   width: 100%;
@@ -72,7 +71,6 @@
     }
   }
 }
-
 .secDos {
   display: flex;
   flex-direction: column;
@@ -172,4 +170,14 @@
   @import "../utils/carrousel";
   display: flex;
   justify-content: center;
+}
+
+.miAudio {
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  z-index: 1;
 }

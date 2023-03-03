@@ -16,7 +16,18 @@
         <input type="input" class="searchBar" maxlength="40" />
         <img class="logo-busq" src="./assets/images/searchLogo.png" />
       </div>
+      
       <nav class="menuHTML">
+        <audio id="player">
+          <source src="assets/audio/audioRafa1.mp3" type="audio/mp3">
+          <source src="assets/audio/audioRafa2.aac" type="audio/aac">
+          <source src="assets/audio/audioRafa3.ogg" type="audio/ogg">
+          Tu navegador no soporta el formato de audio
+        </audio>
+      <div class="botonesAudio">
+          <button class="botonTransparente" onclick="document.getElementById('player').play()"><img src="/src/assets/images/play.png"></button>
+          <button class="botonTransparente" onclick="document.getElementById('player').pause()"><img src="/src/assets/images/pause.png"></button>
+      </div>
         <label for="menu-toggle">
             
            <div class="botonMenu">
@@ -106,7 +117,7 @@
                 (min-width:801px) 3840px
                 "
 
-                src="../src/assets/images/bakcgroundJuego.png" alt="Imagen 1" class="img" >
+                src="../src/assets/images/bakcgroundJuego.png" alt="Imagen 1" class="img" ></img>
                 <img 
                 
                 srcset="../src/assets/images/nivelBartus763.png 763w,
@@ -125,6 +136,7 @@
                 (min-width:801px) 3840px
                 "
                 src="../src/assets/images/nivelDani.webp" alt="Imagen 3" class="img">
+                
                 <img
                 srcset="../src/assets/images/nivelJairo763.png 763w,
                 ../src/assets/images/nivelJairo.png 3840w
