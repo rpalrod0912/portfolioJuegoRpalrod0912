@@ -69,7 +69,9 @@
   }
 
   .imagenPersonaje {
-    width: 30vh;
+    width: 10rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
   @include neo(1, 1.5em, 0.3em);
   opacity: 0;
@@ -156,6 +158,8 @@
 
 @media (max-width: 730px) {
   .contenedor .bloque.bloque.activo {
+    display: flex;
+    justify-content: center;
     width: 100%;
     h2 {
       width: 100%;
@@ -164,6 +168,10 @@
     p {
       width: 100%;
       font-size: 1.8rem;
+    }
+    .imagenPersonaje {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
 }
