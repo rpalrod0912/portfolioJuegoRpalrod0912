@@ -49,3 +49,23 @@
 .carrousel .punto.activo {
   background-color: lightblue;
 }
+
+@media (max-width: 480px) {
+  .carrousel .punto {
+    width: 2rem;
+    height: 2rem;
+  }
+  .carrousel .puntos {
+    bottom: -54px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .carrousel .punto {
+    width: 3rem;
+    height: 3rem;
+  }
+  .carrousel .puntos {
+    bottom: -54px;
+  }
+}

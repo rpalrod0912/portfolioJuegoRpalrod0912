@@ -809,4 +809,26 @@ footer img {
   background-color: #add8e6;
 }
 
+@media (max-width: 480px) {
+  .contenedorCarrousel .carrousel .punto {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .contenedorCarrousel .carrousel .puntos {
+    bottom: -54px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .contenedorCarrousel .carrousel .punto {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .contenedorCarrousel .carrousel .puntos {
+    bottom: -54px;
+  }
+}
+
 /*# sourceMappingURL=index.034b6250.css.map */
