@@ -10,6 +10,9 @@ header {
   flex-direction: row;
   max-height: 40vh;
   height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   a {
     width: 20%;
   }
