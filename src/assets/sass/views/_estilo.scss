@@ -43,6 +43,36 @@
   }
 }
 
+@media (max-width: 400px) {
+  .secInicio {
+    width: auto;
+    overflow: hidden;
+    height: 42rem;
+    //height: 461px;
+    .miVideo {
+      width: auto;
+    }
+    .logoVideo {
+      max-width: 35%;
+    }
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+  .secInicio {
+    width: auto;
+    overflow: hidden;
+    height: 50rem;
+    //height: 461px;
+    .miVideo {
+      width: auto;
+    }
+    .logoVideo {
+      max-width: 30%;
+    }
+  }
+}
+
 .secDos {
   display: flex;
   flex-direction: column;

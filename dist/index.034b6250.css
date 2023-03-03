@@ -208,6 +208,38 @@ footer img {
   position: absolute;
 }
 
+@media (max-width: 400px) {
+  .secInicio {
+    width: auto;
+    height: 42rem;
+    overflow: hidden;
+  }
+
+  .secInicio .miVideo {
+    width: auto;
+  }
+
+  .secInicio .logoVideo {
+    max-width: 35%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+  .secInicio {
+    width: auto;
+    height: 50rem;
+    overflow: hidden;
+  }
+
+  .secInicio .miVideo {
+    width: auto;
+  }
+
+  .secInicio .logoVideo {
+    max-width: 30%;
+  }
+}
+
 .secDos {
   height: 83em;
   background-color: #494949;
