@@ -530,6 +530,7 @@ footer img {
   opacity: .7;
   background-color: #d3d3d3;
   flex-flow: wrap;
+  align-items: center;
   display: flex;
   transform: translateY(0%);
 }
